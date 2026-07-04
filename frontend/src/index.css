@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f4f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%); }
+#root { min-height: 100vh; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; background: white; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06); }
+.brand { font-weight: 800; color: #1d4ed8; font-size: 1.1rem; }
+.nav-links { display: flex; gap: 16px; align-items: center; }
+.nav-links a, .ghost-btn { text-decoration: none; color: #334155; font-weight: 600; background: none; border: none; cursor: pointer; }
+.app-shell { max-width: 1180px; margin: 0 auto; padding: 24px; }
+.home-page, .page-stack { display: flex; flex-direction: column; gap: 20px; }
+.hero-card, .card, .info-card { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); }
+.hero-card { padding: 36px; display: flex; align-items: center; justify-content: space-between; }
+.eyebrow { color: #2563eb; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.75rem; }
+.hero-copy { max-width: 600px; color: #475569; font-size: 1.05rem; }
+.hero-actions { display: flex; gap: 12px; margin-top: 18px; }
+.btn { border: none; border-radius: 999px; padding: 10px 18px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn.primary { background: #2563eb; color: white; }
+.btn.secondary { background: #e2e8f0; color: #0f172a; }
+.info-grid, .stats-grid, .candidate-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.info-card, .stat-card, .candidate-card, .form-card, .welcome-card { padding: 20px; }
+.form-shell { display: flex; justify-content: center; padding-top: 24px; }
+.form-card { width: min(540px, 100%); display: flex; flex-direction: column; gap: 12px; }
+input, select { border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px 12px; font-size: 1rem; }
+.radio-group { display: flex; flex-direction: column; gap: 8px; color: #334155; }
+.card table { width: 100%; border-collapse: collapse; }
+.card th, .card td { text-align: left; padding: 10px; border-bottom: 1px solid #e2e8f0; }
+.success { color: #059669; font-weight: 600; }
+.error { color: #dc2626; font-weight: 600; }
+.loading { text-align: center; padding: 40px; font-size: 1.2rem; }
+.section-head { display: flex; justify-content: space-between; align-items: center; }
